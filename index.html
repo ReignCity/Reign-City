@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#CC5500"> 
+    <title> Reign City| تقديم الإدارة</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@400;700;800&family=Orbitron:wght@700;900&family=Michroma&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-animation"></div>
+    <div class="stars"></div> 
+
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <img src="https://cdn.discordapp.com/attachments/1381004172228296794/1434999968300793948/SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS.png?ex=690d025d&is=690bb0dd&hm=6a4c92a088e5bc9ebc59883f0ca9932a5a11b816a7d584369b57c8d501deb006&" alt="Reign City Logo" class="logo-image">
+                <div class="title">
+                    <span class="michroma">Reign City</span> 
+                    <small>تقديم الإدارة</small>
+                </div>
+            </div>
+            <a href="https://discord.gg/JSHsttcr" class="badge glow-effect">
+                <i class="fab fa-discord"></i> دخول إلى سيرفر الديسكورد
+            </a>
+        </header>
+
+        <main class="main-content">
+            <div class="info-card glow-effect data-card" id="infoCard">
+                <div class="card-header">
+                    <h2><i class="fas fa-exclamation-triangle"></i> تنبيه مهم</h2>
+                </div>
+                <p>
+                    هذا التقديم يعتبر قبولاً مبدئياً. سيتم مراجعة طلبك والتواصل معك لإجراء مقابلة نهائية. شكراً لاهتمامك بالانضمام إلى فريق الإدارة!
+                </p>
+                
+            </div>
+
+            <form id="appForm" class="form-card glow-effect data-card">
+                <div class="card-header">
+                    <h3 class="michroma">نموذج التقديم على الطاقم الاداري</h3>
+                </div>
+                <p class="form-desc">املأ الحقول التالية بدقة وصدق. جميع الحقول التي تحمل علامة (<span class="required-star">*</span>) إلزامية.</p>
+
+                <div class="form-section">
+                    <h4><i class="fas fa-id-badge"></i> بيانات شخصية</h4>
+                    <div class="form-grid">
+                        <div class="input-group">
+                            <label for="realName">الاسم الكامل <span class="required-star">*</span></label>
+                            <input type="text" id="realName" required placeholder="مثال: خالد محمد">
+                        </div>
+                        <div class="input-group">
+                            <label for="age">العمر <span class="required-star">*</span></label>
+                            <input type="number" id="age" min="14" max="60" required placeholder="مثال: +14">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h4><i class="fab fa-discord"></i> بيانات الاتصال (ديسكورد)</h4>
+                    <div class="form-grid">
+                        <div class="input-group">
+                            <label for="discordTag">اسم المستخدم (#) <span class="required-star">*</span></label>
+                            <input type="text" id="discordTag" required placeholder="مثال: Prime_Admin#1234">
+                        </div>
+                        <div class="input-group">
+                            <label for="discordId">معرف الديسكورد (ID) <span class="required-star">*</span></label>
+                            <input type="text" id="discordId" required placeholder="مثال: 123456789012345678">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h4><i class="fas fa-tools"></i> الخبرة والكفاءات</h4>
+                    <div class="form-grid">
+                        <div class="input-group full-width">
+                            <label for="experience">الخبرات السابقة في الإدارة/الإشراف <span class="required-star">*</span></label>
+                            <textarea id="experience" rows="4" required placeholder="اذكر خبراتك بالتفصيل: السيرفرات، الأدوار، المهام..."></textarea>
+                        </div>
+                        <div class="input-group full-width">
+                            <label for="why">ما الذي يجعلك الأفضل لفريقنا؟ <span class="required-star">*</span></label>
+                            <textarea id="why" rows="4" required placeholder="اشرح دوافعك، مهاراتك القيادية، وكيف ستفيد Reign City."></textarea>
+                        </div>
+                        <div class="input-group full-width">
+                            <label for="howDidYouKnow">كيف علمت بـ Reign City؟ <span class="required-star">*</span></label>
+                            <textarea id="howDidYouKnow" rows="2" required placeholder="اذكر المصدر الذي سمعت منه عن سيرفرنا."></textarea>
+                        </div>
+                        <div class="input-group">
+                            <label for="availability">التفرغ الأسبوعي <span class="required-star">*</span></label>
+                            <select id="availability" required>
+                                <option value="" disabled selected>-- اختر --</option>
+                                <option value="1-5">1-5 ساعات</option>
+                                <option value="5-10">5-10 ساعات</option>
+                                <option value="10-15">10-15 ساعة</option>
+                                <option value="15-20">15-20 ساعة</option>
+                                <option value="20+">أكثر من 20 ساعة</option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <label for="mic">جودة المايكروفون <span class="required-star">*</span></label>
+                            <select id="mic" required>
+                                <option value="" disabled selected>-- اختر --</option>
+                                <option value="ممتازة">ممتازة</option>
+                                <option value="جيدة">جيدة</option>
+                                <option value="متوسطة">متوسطة</option>
+                                <option value="غير متوفر">غير متوفر</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="isCurrentAdmin">هل تشغل منصب إداري حالياً بسيرفر آخر؟ <span class="required-star">*</span></label>
+                    <select id="isCurrentAdmin" required>
+                        <option value="" disabled selected>-- اختر --</option>
+                        <option value="نعم">نعم</option>
+                        <option value="لا">لا</option>
+                    </select>
+                </div>
+
+                <div class="terms-checkbox">
+                    <input type="checkbox" id="agree" required>
+                    <label for="agree">أوافق على <a href="#" class="link-effect">شروط وسياسات Reign City</a>.</label>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="submit-btn glow-effect">
+                        <i class="fas fa-paper-plane"></i> إرسال الطلب
+                    </button>
+                    <button type="reset" class="reset-btn">
+                        <i class="fas fa-sync-alt"></i> إعادة تعيين
+                    </button>
+                </div>
+            </form>
+
+            <div id="closedMessage" class="closed-message glow-effect data-card hidden">
+                <div class="card-header">
+                    <h3 class="michroma"><i class="fas fa-times-circle"></i> التقديمات مغلقة</h3>
+                </div>
+                <p>
+                    نعتذر، ولكننا لا نقبل طلبات جديدة في الوقت الحالي. يرجى متابعة إعلانات السيرفر على ديسكورد لمعرفة موعد فتح التقديمات القادم. شكراً لتفهمك!
+                </p>
+                <a href="https://discord.gg/JSHsttcr" class="discord-btn glow-effect">
+                    <i class="fab fa-discord"></i> انضم إلى السيرفر
+                </a>
+            </div>
+        </main>
+    </div>
+
+    <footer class="footer">
+    <p>© <span id="year"></span> <span class="michroma">جميع الحقوق محفوظة</span> | Reign City</p>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+</body>
+</html>
